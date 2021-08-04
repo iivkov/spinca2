@@ -1,0 +1,12 @@
+Ja sam {{name}}
+
+<button [disabled]="buttonDisabled" (click)="buttonClick()">BUTTONprvi</button>
+<br>
+<input type="text" [(ngModel)]="inputText">
+
+{{inputText}}
+
+<button *ngIf="buttonDisabled">BUTTON</button>
+<button *ngFor="let broj of polje">{{broj}}</button>
+
+<app-jelo (click)="clickNaKomponentu" (eventIzJelo)="eventIzKomponente($event)" [jelo]="varijablaIzAppKomponente"></app-jelo>
